@@ -10,9 +10,15 @@ class Normalitem(Item, Updatable):
         return normal_item
 
     def update_quality(self):
-        if self.quality <= 50 or self.quality > 0:
+        if (self.quality <= 50 or self.quality > 0) and self.sell_in >= 0:
             self.quality -= 1
+        elif (self.quality <= 50 or self.quality > 0) and self.sell_in < 0:
+            self.quality -= 2
         else:
             pass
+
+        if self.quality < 0:
+            self.quality = 0
+
         normal_item = self.__repr__()
         return normal_item
