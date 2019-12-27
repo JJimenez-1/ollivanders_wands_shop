@@ -13,3 +13,9 @@ def test_class_normalitem_setsellin_negative():
     normal_item = Normalitem("carrot", -1, 8)
     item_sellin_update = normal_item.set_sellin() and normal_item.update_quality()
     assert item_sellin_update == "carrot, -2, 6"
+
+
+def test_class_normalitem_quality_to_zero():
+    normal_item = Normalitem("watermelon", -1, 1)
+    item_sellin_update = normal_item.set_sellin() and normal_item.update_quality()
+    assert item_sellin_update == "watermelon, -2, 0"
