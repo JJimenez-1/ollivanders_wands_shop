@@ -2,6 +2,7 @@ from clases.item import Item
 from clases.normalitem import Normalitem
 from clases.updatable import Updatable
 from clases.agedbrie import Agedbrie
+from clases.sulfuras import Sulfuras
 
 def test_class_normalitem_works():
     normal_item = Normalitem("potatoe", 10, 8)
@@ -23,11 +24,11 @@ def test_class_normalitem_quality_to_zero():
 
 def test_class_Agedbrie_works():
     aged_brie = Agedbrie("apple", -25, 48)
-    item_sellin_update = normal_item.set_sellin() and aged_brie.update_quality()
+    item_sellin_update = aged_brie.set_sellin() and aged_brie.update_quality()
     assert item_sellin_update == "apple, -26, 50"
 
 
 def test_class_Agedbrie_quality_to_50():
     aged_brie = Agedbrie("apple", -25, 49)
-    item_sellin_update = Normalitem.set_sellin() and aged_brie.update_quality()
+    item_sellin_update = aged_brie.set_sellin() and aged_brie.update_quality()
     assert item_sellin_update == "apple, -26, 50"

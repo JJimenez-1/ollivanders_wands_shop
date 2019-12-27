@@ -1,4 +1,4 @@
-from normalitem import Normalitem
+from clases.normalitem import Normalitem
 
 
 class Agedbrie(Normalitem):
