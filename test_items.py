@@ -32,3 +32,9 @@ def test_class_Agedbrie_quality_to_50():
     aged_brie = Agedbrie("apple", -25, 49)
     item_sellin_update = aged_brie.set_sellin() and aged_brie.update_quality()
     assert item_sellin_update == "apple, -26, 50"
+
+
+def test_class_Sulfuras_works():
+    sulfuras = Sulfuras("Sulfuras", 0, 50)
+    item_update = sulfuras.set_sellin() and sulfuras.update_quality()
+    assert item_update == "Sulfuras, 0, 50"
