@@ -4,6 +4,7 @@ from clases.updatable import Updatable
 from clases.agedbrie import Agedbrie
 from clases.sulfuras import Sulfuras
 from clases.backstagepass import Backstagepass
+from clases.conjured import Conjured
 
 def test_class_normalitem_works():
     normal_item = Normalitem("potatoe", 10, 8)
@@ -45,3 +46,13 @@ def test_class_Backstagepass_works():
     backstage_pass = Backstagepass("Backstagepass", 3, 10)
     item_update = backstage_pass.set_sellin() and backstage_pass.update_quality()
     assert item_update == "Backstagepass, 2, 13"
+
+
+def test_class_Conjured_works():
+    conjured = Conjured("Conjured", 3, 10)
+    item_update = conjured.set_sellin() and conjured.update_quality()
+    assert item_update == "Conjured, 2, 8"
+
+
+if __name__ == "__main__":
+    assert test_class_Conjured_works() == True
