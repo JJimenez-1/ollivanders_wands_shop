@@ -10,5 +10,4 @@ class Sulfuras(Normalitem):
 
     def update_quality(self):
         self.quality == self.quality
-        sulfuras = self.__repr__()
-        return sulfuras
+        return self.__repr__()

@@ -19,6 +19,5 @@ class Normalitem(Item, Updatable):
 
         if self.quality < 0:
             self.quality = 0
-
-        normal_item = self.__repr__()
-        return normal_item
+        
+        return self.__repr__()

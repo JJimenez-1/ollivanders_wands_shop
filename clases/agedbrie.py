@@ -13,5 +13,4 @@ class Agedbrie(Normalitem):
 
         if self.quality > 50:
             self.quality = 50
-        aged_brie = self.__repr__()
-        return aged_brie
+        return self.__repr__()

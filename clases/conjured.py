@@ -13,5 +13,4 @@ class Conjured(Normalitem):
 
         if self.quality < 0:
             self.quality = 0
-        conjured = self.__repr__()
-        return conjured
+        return self.__repr__()
