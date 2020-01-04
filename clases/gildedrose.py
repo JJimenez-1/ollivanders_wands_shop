@@ -10,6 +10,8 @@ class Gildedrose:
         list_of_items = []
         for item in Updatable.__subclasses__():
             list_of_items.append(item)
+        for item in Normalitem.__subclasses__():
+            list_of_items.append(item)
         return list_of_items
 
     def update_quality(self):
