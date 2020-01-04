@@ -1,6 +1,6 @@
 from clases.updatable import Updatable
 from clases.item import Item
-
+from clases.normalitem import Normalitem
 
 class Gildedrose:
     def __init__(self, Updatable):
