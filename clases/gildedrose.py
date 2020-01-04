@@ -1,20 +1,20 @@
 from clases.updatable import Updatable
 from clases.item import Item
 from clases.normalitem import Normalitem
+from clases.agedbrie import Agedbrie
+from clases.backstagepass import Backstagepass
+from clases.conjured import Conjured
+from clases.sulfuras import Sulfuras
+
 
 class Gildedrose:
-    def __init__(self, Updatable):
-        self.items = Updatable
+    def __init__(self, Updatable, Normalitem):
+        self.items = []
 
     def get_items(self):
-        list_of_items = []
-        for item in Updatable.__subclasses__():
-            list_of_items.append(item)
-        for item in Normalitem.__subclasses__():
-            list_of_items.append(item)
-        return list_of_items
+        return self.items.__repr__()
 
     def update_quality(self):
-        list_of_items = Gildedrose.get_items(self)
-        for item in list_of_items:
+        klass = Gildedrose.get_items(self)
+        for item in klass:
             item.update_quality(self)
