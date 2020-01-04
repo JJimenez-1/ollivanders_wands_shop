@@ -18,4 +18,3 @@ class Gildedrose:
         list_of_items = Gildedrose.get_items(self)
         for item in list_of_items:
             item.update_quality(self)
-

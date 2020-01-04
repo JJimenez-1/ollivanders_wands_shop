@@ -13,4 +13,6 @@ class Agedbrie(Normalitem):
 
         if self.quality > 50:
             self.quality = 50
+
+        Normalitem.set_sellin(self)
         return self.__repr__()
