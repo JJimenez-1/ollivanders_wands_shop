@@ -5,8 +5,7 @@ class Sulfuras(Normalitem):
 
     def set_sellin(self):
         self.sell_in == self.sell_in
-        sulfuras = self.__repr__()
-        return sulfuras
+        return self.__repr__()
 
     def update_quality(self):
         self.quality == self.quality
