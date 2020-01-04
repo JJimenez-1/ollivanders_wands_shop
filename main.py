@@ -1,20 +1,25 @@
 from clases.item import Item
 from clases.updatable import Updatable
 from clases.gildedrose import Gildedrose
+from clases.normalitem import Normalitem
+from clases.agedbrie import Agedbrie
+from clases.backstagepass import Backstagepass
+from clases.conjured import Conjured
+from clases.sulfuras import Sulfuras
+from add_item import Add_item
 
 
 if __name__ == "__main__":
-    list_of_items = [
-            Item(name="+5 Dexterity Vest", sell_in=10, quality=20),
-            Item(name="Aged Brie", sell_in=2, quality=0),
-            Item(name="Elixir of the Mongoose", sell_in=5, quality=7),
-            Item(name="Sulfuras, Hand of Ragnaros", sell_in=0, quality=80),
-            Item(name="Sulfuras, Hand of Ragnaros", sell_in=-1, quality=80),
-            Item(name="Backstage passes to a TAFKAL80ETC concert", sell_in=15, quality=20),
-            Item(name="Backstage passes to a TAFKAL80ETC concert", sell_in=10, quality=49),
-            Item(name="Backstage passes to a TAFKAL80ETC concert", sell_in=5, quality=49),
-            Item(name="Conjured Mana Cake", sell_in=3, quality=6),
-            ]
-    for item in list_of_items:
-        Gildedrose.update_quality(item)
-    print(list_of_items)
+    dexterity = Normalitem("+5 Dexterity Vest", 10, 20)
+    agedbrie = Agedbrie("Aged Brie", 2, 0)
+    sulfuras = Sulfuras("Sulfuras, Hand of Ragnaros", 0, 80)
+    sulfuras_two = Sulfuras("Sulfuras, Hand of Ragnaros", -1, 80)
+    backstage = Backstagepass("Backstage passes to a TAFKAL80ETC concert", 15, 20)
+    backstage_two = Backstagepass("Backstage passes to a TAFKAL80ETC concert", 10, 49)
+    backstage_three = Backstagepass("Backstage passes to a TAFKAL80ETC concert", 5, 49)
+    conjured = Conjured("Conjured Mana Cake", 3, 6)
+    add_item = Add_item(Updatable, Normalitem)
+    inventario = Gildedrose(Updatable, Normalitem)
+
+    add_item.add_item([dexterity, agedbrie, sulfuras, sulfuras_two, backstage, backstage_two, backstage_three, conjured])
+    inventario.get_items()
