@@ -10,5 +10,5 @@ class Sulfuras(Normalitem):
         self.quality == self.quality
 
         Sulfuras.set_sellin(self)
-        return self.__repr__()
+        print(self.__repr__())
 

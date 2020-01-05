@@ -15,4 +15,4 @@ class Agedbrie(Normalitem):
             self.quality = 50
 
         Normalitem.set_sellin(self)
-        return self.__repr__()
+        print(self.__repr__())
