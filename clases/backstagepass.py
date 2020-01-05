@@ -12,7 +12,10 @@ class Backstagepass(Normalitem):
             self.quality += 3
 
         if self.sell_in < 0:
-            self.quality == 0
+            self.quality = 0
+        
+        if self.quality > 50:
+            self.quality = 50
 
         Normalitem.set_sellin(self)
-        return self.__repr__()
+        print(self.__repr__())
