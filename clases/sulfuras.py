@@ -11,4 +11,3 @@ class Sulfuras(Normalitem):
 
         Sulfuras.set_sellin(self)
         print(self.__repr__())
-

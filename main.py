@@ -19,7 +19,7 @@ if __name__ == "__main__":
     backstage_two = Backstagepass("Backstage passes to a TAFKAL80ETC concert", 10, 49)
     backstage_three = Backstagepass("Backstage passes to a TAFKAL80ETC concert", 5, 49)
     conjured = Conjured("Conjured Mana Cake", 3, 6)
-    
+
     items = add_item([dexterity, agedbrie, mongoose, sulfuras, sulfuras_two, backstage, backstage_two, backstage_three, conjured])
     inventario = Gildedrose(items)
 

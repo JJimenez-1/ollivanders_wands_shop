@@ -13,7 +13,7 @@ class Backstagepass(Normalitem):
 
         if self.sell_in < 0:
             self.quality = 0
-        
+
         if self.quality > 50:
             self.quality = 50
 
