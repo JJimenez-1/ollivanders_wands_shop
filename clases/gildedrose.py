@@ -8,13 +8,13 @@ from clases.sulfuras import Sulfuras
 
 
 class Gildedrose:
-    def __init__(self, Updatable, Normalitem):
-        self.items = []
+    def __init__(self, items):
+        self.items = items
 
     def get_items(self):
-        return self.items.__repr__()
+        for item in self.items:
+            print(item.__repr__())
 
     def update_quality(self):
-        klass = Gildedrose.get_items(self)
-        for item in klass:
-            item.update_quality(self)
+        for item in self.items:
+            item.update_quality()
