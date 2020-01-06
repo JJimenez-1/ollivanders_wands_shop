@@ -11,6 +11,18 @@ class Gildedrose:
     def __init__(self, items):
         self.items = items
 
+    def add_item(items):
+        list_of_items = []
+        for item in items:
+            try:
+                if item.quality > 50 or item.quality < 0:
+                    raise ValueError
+            except ValueError:
+                print(item.name + ' no cumple los requisitos para entrar en la tienda.')
+            else:
+                list_of_items.append(item)
+        return list_of_items
+
     def get_items(self):
         for item in self.items:
             print(item.__repr__())
@@ -18,3 +30,5 @@ class Gildedrose:
     def update_quality(self):
         for item in self.items:
             item.update_quality()
+
+    

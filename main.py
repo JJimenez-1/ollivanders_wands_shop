@@ -6,7 +6,6 @@ from clases.agedbrie import Agedbrie
 from clases.backstagepass import Backstagepass
 from clases.conjured import Conjured
 from clases.sulfuras import Sulfuras
-from add_item import add_item
 
 
 if __name__ == "__main__":
@@ -20,7 +19,7 @@ if __name__ == "__main__":
     backstage_three = Backstagepass("Backstage passes to a TAFKAL80ETC concert", 5, 49)
     conjured = Conjured("Conjured Mana Cake", 3, 6)
 
-    items = add_item([dexterity, agedbrie, mongoose, sulfuras, sulfuras_two, backstage, backstage_two, backstage_three, conjured])
+    items = Gildedrose.add_item([dexterity, agedbrie, mongoose, sulfuras, sulfuras_two, backstage, backstage_two, backstage_three, conjured])
     inventario = Gildedrose(items)
 
     inventario.get_items()
