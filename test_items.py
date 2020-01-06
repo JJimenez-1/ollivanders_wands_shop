@@ -1,11 +1,4 @@
-from clases.item import Item
-from clases.normalitem import Normalitem
-from clases.updatable import Updatable
-from clases.agedbrie import Agedbrie
-from clases.sulfuras import Sulfuras
-from clases.backstagepass import Backstagepass
-from clases.conjured import Conjured
-from clases.gildedrose import Gildedrose
+from main import *
 
 
 def test_class_normalitem_works():
@@ -55,6 +48,12 @@ def test_class_Backstagepass_works():
     backstage_pass.update_quality()
     backstage_pass = backstage_pass.__repr__()
     assert backstage_pass == "Backstagepass, 2, 13"
+
+def test_class_Backstagepass_negative_sellin():
+    backstage_pass = Backstagepass("Backstagepass", 0, 10)
+    backstage_pass.update_quality()
+    backstage_pass = backstage_pass.__repr__()
+    assert backstage_pass == "Backstagepass, -1, 0"
 
 
 def test_class_Conjured_works():

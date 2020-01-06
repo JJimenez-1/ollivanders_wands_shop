@@ -4,6 +4,8 @@ from clases.normalitem import Normalitem
 class Backstagepass(Normalitem):
 
     def update_quality(self):
+        Normalitem.set_sellin(self)
+
         if self.sell_in > 10:
             self.quality += 1
         elif self.sell_in <= 10 and self.sell_in > 5:
@@ -16,6 +18,5 @@ class Backstagepass(Normalitem):
 
         if self.quality > 50:
             self.quality = 50
-
-        Normalitem.set_sellin(self)
+        
         print(self.__repr__())
