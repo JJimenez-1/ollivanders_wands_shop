@@ -10,8 +10,9 @@ from clases.gildedrose import Gildedrose
 
 def test_class_normalitem_works():
     normal_item = Normalitem("potatoe", 10, 8)
-    item_sellin_updated = normal_item.set_sellin() and normal_item.update_quality()
-    assert item_sellin_updated == "potatoe, 9, 7"
+    normal_item.update_quality()
+    normal_item = normal_item.__repr__()
+    assert normal_item == "potatoe, 9, 7"
 
 
 def test_class_normalitem_setsellin_negative():

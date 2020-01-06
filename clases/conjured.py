@@ -15,4 +15,4 @@ class Conjured(Normalitem):
             self.quality = 0
 
         Normalitem.set_sellin(self)
-        return self.__repr__()
+        print(self.__repr__())
