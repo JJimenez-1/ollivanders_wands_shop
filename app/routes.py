@@ -13,7 +13,6 @@ def show_inventory():
 
 @app.route('/update_inventory')
 def update_inventory():
-    show_inventory() + "</br>"
     text_in_front = "----------- Inventory updated -----------<br/>"
     updated_inventory = inventario.update_quality()
     for item in updated_inventory:
