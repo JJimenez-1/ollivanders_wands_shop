@@ -27,10 +27,12 @@ class Gildedrose:
         inventory = []
         for item in self.items:
             inventory.append(item.__repr__())
+            print(item.__repr__())
         return inventory
 
     def update_quality(self):
+        updated_inventory = []
         for item in self.items:
             item.update_quality()
-
-    
+            updated_inventory.append(item.__repr__())
+        return updated_inventory

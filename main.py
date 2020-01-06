@@ -23,5 +23,7 @@ inventario = Gildedrose(items)
 
 
 if __name__ == "__main__":
+    print("-------------- Inventory at this moment --------------")
     inventario.get_items()
+    print("-------------- Inventory updated --------------")
     inventario.update_quality()
