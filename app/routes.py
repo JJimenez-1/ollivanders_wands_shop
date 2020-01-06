@@ -4,8 +4,11 @@ from main import *
 
 @app.route('/')
 def show_inventory():
+    string = ""
     inventary = inventario.get_items()
-    return inventary.__repr__()
+    for item in inventary:
+        string = string + item
+    return string.__repr__()
 
 
 @app.route('/update_inventory')
