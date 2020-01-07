@@ -10,9 +10,7 @@ class Conjured(Normalitem):
             self.quality -= 4
         else:
             pass
-
         if self.quality < 0:
             self.quality = 0
-
         Normalitem.set_sellin(self)
         print(self.__repr__())

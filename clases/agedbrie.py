@@ -11,8 +11,6 @@ class Agedbrie(Normalitem):
             self.quality += 2
         else:
             pass
-
         if self.quality > 50:
             self.quality = 50
-
         print(self.__repr__())
