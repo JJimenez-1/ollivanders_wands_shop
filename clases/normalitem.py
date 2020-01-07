@@ -8,6 +8,7 @@ class Normalitem(Item, Updatable):
         self.sell_in -= 1
 
     def update_quality(self):
+        Normalitem.set_sellin(self)
         if (self.quality <= 50 or self.quality > 0) and self.sell_in >= 0:
             self.quality -= 1
         elif (self.quality <= 50 or self.quality > 0) and self.sell_in < 0:
@@ -17,6 +18,4 @@ class Normalitem(Item, Updatable):
 
         if self.quality < 0:
             self.quality = 0
-
-        Normalitem.set_sellin(self)
         print(self.__repr__())
