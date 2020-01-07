@@ -4,20 +4,20 @@ from main import *
 
 @app.route('/')
 def show_inventory():
-    text_in_front = "----------- Inventory right now -----------<br/>"
-    inventory = inventario.get_items()
-    for item in inventory:
-        text_in_front = text_in_front + "<br/>" + item
-    return text_in_front
+    front_end = "----------- Inventory right now -----------<br/>"
+    actual_inventory = inventory.get_items()
+    for item in actual_inventory:
+        front_end = front_end + "<br/>" + item
+    return front_end
 
 
 @app.route('/update_inventory')
 def update_inventory():
-    text_in_front = "----------- Inventory updated -----------<br/>"
-    updated_inventory = inventario.update_quality()
+    front_end = "----------- Inventory updated -----------<br/>"
+    updated_inventory = inventory.update_quality()
     for item in updated_inventory:
-        text_in_front = text_in_front + "<br/>" + item
-    return text_in_front
+        front_end = front_end + "<br/>" + item
+    return front_end
 
 
 if __name__ == "__main__":

@@ -15,7 +15,6 @@ class Normalitem(Item, Updatable):
             self.quality -= 2
         else:
             pass
-
         if self.quality < 0:
             self.quality = 0
         print(self.__repr__())

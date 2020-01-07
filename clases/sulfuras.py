@@ -8,6 +8,5 @@ class Sulfuras(Normalitem):
 
     def update_quality(self):
         self.quality == self.quality
-
         Sulfuras.set_sellin(self)
         print(self.__repr__())
