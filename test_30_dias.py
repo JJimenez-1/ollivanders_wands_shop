@@ -359,3 +359,7 @@ def test_dia_30():
                               "Backstage passes to a TAFKAL80ETC concert, -20, 0",
                               "Backstage passes to a TAFKAL80ETC concert, -25, 0",
                               "Conjured Mana Cake, -27, 0"]
+
+
+if __name__ == "__main__":
+    assert test_dia_2() == True
