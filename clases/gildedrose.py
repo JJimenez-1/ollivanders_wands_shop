@@ -15,7 +15,7 @@ class Gildedrose:
         list_of_items = []
         for item in items:
             try:
-                if item.quality > 50 or item.quality < 0:
+                if (item.quality > 50 or item.quality < 0) and item.name != "Sulfuras, Hand of Ragnaros":
                     raise ValueError
             except ValueError:
                 print(item.name + ' no cumple los requisitos para entrar en la tienda.')
