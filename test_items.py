@@ -22,6 +22,13 @@ def test_class_normalitem_quality_to_zero():
     assert normal_item == "watermelon, -2, 0"
 
 
+def test_class_normalitem_quality_not_negative():
+    normal_item = Normalitem("watermelon", -1, 0)
+    normal_item.update_quality()
+    normal_item = normal_item.__repr__()
+    assert normal_item == "watermelon, -2, 0"
+
+
 def test_class_Agedbrie_works():
     aged_brie = Agedbrie("apple", -25, 48)
     aged_brie.update_quality()
@@ -31,6 +38,13 @@ def test_class_Agedbrie_works():
 
 def test_class_Agedbrie_quality_to_50():
     aged_brie = Agedbrie("apple", -25, 49)
+    aged_brie.update_quality()
+    aged_brie = aged_brie.__repr__()
+    assert aged_brie == "apple, -26, 50"
+
+
+def test_class_Agedbrie_quality_not_more_than_50():
+    aged_brie = Agedbrie("apple", -25, 50)
     aged_brie.update_quality()
     aged_brie = aged_brie.__repr__()
     assert aged_brie == "apple, -26, 50"
@@ -49,6 +63,14 @@ def test_class_Backstagepass_works():
     backstage_pass = backstage_pass.__repr__()
     assert backstage_pass == "Backstagepass, 2, 13"
 
+
+def test_class_Backstagepass_sellin_between_5_and_0():
+    backstage_pass = Backstagepass("Backstagepass", 5, 10)
+    backstage_pass.update_quality()
+    backstage_pass = backstage_pass.__repr__()
+    assert backstage_pass == "Backstagepass, 4, 13"
+
+
 def test_class_Backstagepass_negative_sellin():
     backstage_pass = Backstagepass("Backstagepass", 0, 10)
     backstage_pass.update_quality()
@@ -61,3 +83,10 @@ def test_class_Conjured_works():
     conjured.update_quality()
     conjured = conjured.__repr__()
     assert conjured == "Conjured, 2, 8"
+
+
+def test_class_Conjured_negative_sellin():
+    conjured = Conjured("Conjured", -3, 10)
+    conjured.update_quality()
+    conjured = conjured.__repr__()
+    assert conjured == "Conjured, -4, 6"
