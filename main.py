@@ -13,3 +13,14 @@ conjured_item = Conjured("Conjured Mana Cake", 3, 6)
 
 items_accepted = Gildedrose.add_item([dexterity, aged_brie, mongoose, sulfuras, sulfuras_two, backstage, backstage_two, backstage_three, conjured_item])
 inventory = Gildedrose(items_accepted)
+
+
+if __name__ == "__main__":
+    print("-------------- Inventory at this moment --------------")
+    selected_inventory = inventory.get_items()
+    for item in selected_inventory:
+        print(item)
+    print("-------------- Inventory updated --------------")
+    updated_inventory = inventory.update_quality()
+    for item in updated_inventory:
+        print(item)
