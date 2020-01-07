@@ -15,4 +15,3 @@ class Backstagepass(Normalitem):
             self.quality = 0
         if self.quality > 50:
             self.quality = 50
-        print(self.__repr__())

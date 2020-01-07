@@ -27,7 +27,6 @@ class Gildedrose:
         inventory = []
         for item in self.items:
             inventory.append(item.__repr__())
-            print(item.__repr__())
         return inventory
 
     def update_quality(self):

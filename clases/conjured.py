@@ -13,4 +13,3 @@ class Conjured(Normalitem):
         if self.quality < 0:
             self.quality = 0
         Normalitem.set_sellin(self)
-        print(self.__repr__())
