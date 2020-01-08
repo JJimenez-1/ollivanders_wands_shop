@@ -16,11 +16,11 @@ inventory = Gildedrose(items_accepted)
 
 
 if __name__ == "__main__":
-    print("-------------- Inventory at this moment --------------")
-    selected_inventory = inventory.get_items()
-    for item in selected_inventory:
+    print("----------- Inventory right now -----------")
+    inventory.get_items()
+    for item in items_accepted:
         print(item)
-    print("-------------- Inventory updated --------------")
-    updated_inventory = inventory.update_quality()
-    for item in updated_inventory:
+    print("----------- Inventory updated -----------")
+    inventory.update_quality()
+    for item in items_accepted:
         print(item)
