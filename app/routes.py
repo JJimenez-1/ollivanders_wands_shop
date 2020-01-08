@@ -20,5 +20,15 @@ def update_inventory():
     return front_end
 
 
+@app.route('/update_inventory/<days>')
+def update_inventory_days(days):
+    front_end = "----------- Update at Day " + days + " -----------<br/>"
+    for day in range(1, int(days) + 1):
+        inventory.update_quality()
+    for item in items_accepted:
+        front_end = front_end + "<br/>" + item.__repr__()
+    return front_end
+
+
 if __name__ == "__main__":
     app.run()
