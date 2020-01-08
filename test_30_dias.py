@@ -1,4 +1,4 @@
-from logic import update_days
+from logica_30_dias import update_days
 
 
 def test_dia_1():
