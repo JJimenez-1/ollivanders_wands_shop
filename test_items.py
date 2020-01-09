@@ -98,3 +98,11 @@ def test_class_Gildedrose_Normalitem():
     for item in gildedrose.items:
         item_updated = item.__repr__()
     assert item_updated == "Phoneix, 3, 32"
+
+
+def test_class_Gildedrose_Conjured():
+    gildedrose = Gildedrose([Conjured("Conjured dark mana", 1, 20)])
+    gildedrose.update_quality()
+    for item in gildedrose.items:
+        item_updated = item.__repr__()
+    assert item_updated == "Conjured dark mana, 0, 18"
