@@ -90,3 +90,11 @@ def test_class_Conjured_negative_sellin():
     conjured.update_quality()
     conjured = conjured.__repr__()
     assert conjured == "Conjured, -4, 6"
+
+
+def test_class_Gildedrose_Normalitem():
+    gildedrose = Gildedrose([Normalitem("Phoneix", 4, 33)])
+    gildedrose.update_quality()
+    for item in gildedrose.items:
+        item_updated = item.__repr__()
+    assert item_updated == "Phoneix, 3, 32"
