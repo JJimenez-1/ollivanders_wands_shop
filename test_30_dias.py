@@ -1,8 +1,8 @@
-from logica_30_dias import update_days
+from main import *
 
 
 def test_dia_1():
-    assert update_days(1) == ["+5 Dexterity Vest, 9, 19",
+    assert main(1) == ["+5 Dexterity Vest, 9, 19",
                               "Aged Brie, 1, 1",
                               "Elixir of the Mongoose, 4, 6",
                               "Sulfuras, Hand of Ragnaros, 0, 80",
@@ -14,7 +14,7 @@ def test_dia_1():
 
 
 def test_dia_2():
-    assert update_days(2) == ["+5 Dexterity Vest, 8, 18",
+    assert main(2) == ["+5 Dexterity Vest, 8, 18",
                               "Aged Brie, 0, 2",
                               "Elixir of the Mongoose, 3, 5",
                               "Sulfuras, Hand of Ragnaros, 0, 80",
@@ -26,7 +26,7 @@ def test_dia_2():
 
 
 def test_dia_3():
-    assert update_days(3) == ["+5 Dexterity Vest, 7, 17",
+    assert main(3) == ["+5 Dexterity Vest, 7, 17",
                               "Aged Brie, -1, 4",
                               "Elixir of the Mongoose, 2, 4",
                               "Sulfuras, Hand of Ragnaros, 0, 80",
@@ -38,7 +38,7 @@ def test_dia_3():
 
 
 def test_dia_4():
-    assert update_days(4) == ["+5 Dexterity Vest, 6, 16",
+    assert main(4) == ["+5 Dexterity Vest, 6, 16",
                               "Aged Brie, -2, 6",
                               "Elixir of the Mongoose, 1, 3",
                               "Sulfuras, Hand of Ragnaros, 0, 80",
@@ -50,7 +50,7 @@ def test_dia_4():
 
 
 def test_dia_5():
-    assert update_days(5) == ["+5 Dexterity Vest, 5, 15",
+    assert main(5) == ["+5 Dexterity Vest, 5, 15",
                               "Aged Brie, -3, 8",
                               "Elixir of the Mongoose, 0, 2",
                               "Sulfuras, Hand of Ragnaros, 0, 80",
@@ -62,7 +62,7 @@ def test_dia_5():
 
 
 def test_dia_6():
-    assert update_days(6) == ["+5 Dexterity Vest, 4, 14",
+    assert main(6) == ["+5 Dexterity Vest, 4, 14",
                               "Aged Brie, -4, 10",
                               "Elixir of the Mongoose, -1, 0",
                               "Sulfuras, Hand of Ragnaros, 0, 80",
@@ -74,7 +74,7 @@ def test_dia_6():
 
 
 def test_dia_7():
-    assert update_days(7) == ["+5 Dexterity Vest, 3, 13",
+    assert main(7) == ["+5 Dexterity Vest, 3, 13",
                               "Aged Brie, -5, 12",
                               "Elixir of the Mongoose, -2, 0",
                               "Sulfuras, Hand of Ragnaros, 0, 80",
@@ -86,7 +86,7 @@ def test_dia_7():
 
 
 def test_dia_8():
-    assert update_days(8) == ["+5 Dexterity Vest, 2, 12",
+    assert main(8) == ["+5 Dexterity Vest, 2, 12",
                               "Aged Brie, -6, 14",
                               "Elixir of the Mongoose, -3, 0",
                               "Sulfuras, Hand of Ragnaros, 0, 80",
@@ -98,7 +98,7 @@ def test_dia_8():
 
 
 def test_dia_9():
-    assert update_days(9) == ["+5 Dexterity Vest, 1, 11",
+    assert main(9) == ["+5 Dexterity Vest, 1, 11",
                               "Aged Brie, -7, 16",
                               "Elixir of the Mongoose, -4, 0",
                               "Sulfuras, Hand of Ragnaros, 0, 80",
@@ -110,7 +110,7 @@ def test_dia_9():
 
 
 def test_dia_10():
-    assert update_days(10) == ["+5 Dexterity Vest, 0, 10",
+    assert main(10) == ["+5 Dexterity Vest, 0, 10",
                               "Aged Brie, -8, 18",
                               "Elixir of the Mongoose, -5, 0",
                               "Sulfuras, Hand of Ragnaros, 0, 80",
@@ -122,7 +122,7 @@ def test_dia_10():
 
 
 def test_dia_11():
-    assert update_days(11) == ["+5 Dexterity Vest, -1, 8",
+    assert main(11) == ["+5 Dexterity Vest, -1, 8",
                               "Aged Brie, -9, 20",
                               "Elixir of the Mongoose, -6, 0",
                               "Sulfuras, Hand of Ragnaros, 0, 80",
@@ -134,7 +134,7 @@ def test_dia_11():
 
 
 def test_dia_12():
-    assert update_days(12) == ["+5 Dexterity Vest, -2, 6",
+    assert main(12) == ["+5 Dexterity Vest, -2, 6",
                               "Aged Brie, -10, 22",
                               "Elixir of the Mongoose, -7, 0",
                               "Sulfuras, Hand of Ragnaros, 0, 80",
@@ -146,7 +146,7 @@ def test_dia_12():
 
 
 def test_dia_13():
-    assert update_days(13) == ["+5 Dexterity Vest, -3, 4",
+    assert main(13) == ["+5 Dexterity Vest, -3, 4",
                               "Aged Brie, -11, 24",
                               "Elixir of the Mongoose, -8, 0",
                               "Sulfuras, Hand of Ragnaros, 0, 80",
@@ -158,7 +158,7 @@ def test_dia_13():
 
 
 def test_dia_14():
-    assert update_days(14) == ["+5 Dexterity Vest, -4, 2",
+    assert main(14) == ["+5 Dexterity Vest, -4, 2",
                               "Aged Brie, -12, 26",
                               "Elixir of the Mongoose, -9, 0",
                               "Sulfuras, Hand of Ragnaros, 0, 80",
@@ -170,7 +170,7 @@ def test_dia_14():
 
 
 def test_dia_15():
-    assert update_days(15) == ["+5 Dexterity Vest, -5, 0",
+    assert main(15) == ["+5 Dexterity Vest, -5, 0",
                               "Aged Brie, -13, 28",
                               "Elixir of the Mongoose, -10, 0",
                               "Sulfuras, Hand of Ragnaros, 0, 80",
@@ -182,7 +182,7 @@ def test_dia_15():
 
 
 def test_dia_16():
-    assert update_days(16) == ["+5 Dexterity Vest, -6, 0",
+    assert main(16) == ["+5 Dexterity Vest, -6, 0",
                               "Aged Brie, -14, 30",
                               "Elixir of the Mongoose, -11, 0",
                               "Sulfuras, Hand of Ragnaros, 0, 80",
@@ -194,7 +194,7 @@ def test_dia_16():
 
 
 def test_dia_17():
-    assert update_days(17) == ["+5 Dexterity Vest, -7, 0",
+    assert main(17) == ["+5 Dexterity Vest, -7, 0",
                               "Aged Brie, -15, 32",
                               "Elixir of the Mongoose, -12, 0",
                               "Sulfuras, Hand of Ragnaros, 0, 80",
@@ -206,7 +206,7 @@ def test_dia_17():
 
 
 def test_dia_18():
-    assert update_days(18) == ["+5 Dexterity Vest, -8, 0",
+    assert main(18) == ["+5 Dexterity Vest, -8, 0",
                               "Aged Brie, -16, 34",
                               "Elixir of the Mongoose, -13, 0",
                               "Sulfuras, Hand of Ragnaros, 0, 80",
@@ -218,7 +218,7 @@ def test_dia_18():
 
 
 def test_dia_19():
-    assert update_days(19) == ["+5 Dexterity Vest, -9, 0",
+    assert main(19) == ["+5 Dexterity Vest, -9, 0",
                               "Aged Brie, -17, 36",
                               "Elixir of the Mongoose, -14, 0",
                               "Sulfuras, Hand of Ragnaros, 0, 80",
@@ -230,7 +230,7 @@ def test_dia_19():
 
 
 def test_dia_20():
-    assert update_days(20) == ["+5 Dexterity Vest, -10, 0",
+    assert main(20) == ["+5 Dexterity Vest, -10, 0",
                               "Aged Brie, -18, 38",
                               "Elixir of the Mongoose, -15, 0",
                               "Sulfuras, Hand of Ragnaros, 0, 80",
@@ -242,7 +242,7 @@ def test_dia_20():
 
 
 def test_dia_21():
-    assert update_days(21) == ["+5 Dexterity Vest, -11, 0",
+    assert main(21) == ["+5 Dexterity Vest, -11, 0",
                               "Aged Brie, -19, 40",
                               "Elixir of the Mongoose, -16, 0",
                               "Sulfuras, Hand of Ragnaros, 0, 80",
@@ -254,7 +254,7 @@ def test_dia_21():
 
 
 def test_dia_22():
-    assert update_days(22) == ["+5 Dexterity Vest, -12, 0",
+    assert main(22) == ["+5 Dexterity Vest, -12, 0",
                               "Aged Brie, -20, 42",
                               "Elixir of the Mongoose, -17, 0",
                               "Sulfuras, Hand of Ragnaros, 0, 80",
@@ -266,7 +266,7 @@ def test_dia_22():
 
 
 def test_dia_23():
-    assert update_days(23) == ["+5 Dexterity Vest, -13, 0",
+    assert main(23) == ["+5 Dexterity Vest, -13, 0",
                               "Aged Brie, -21, 44",
                               "Elixir of the Mongoose, -18, 0",
                               "Sulfuras, Hand of Ragnaros, 0, 80",
@@ -278,7 +278,7 @@ def test_dia_23():
 
 
 def test_dia_24():
-    assert update_days(24) == ["+5 Dexterity Vest, -14, 0",
+    assert main(24) == ["+5 Dexterity Vest, -14, 0",
                               "Aged Brie, -22, 46",
                               "Elixir of the Mongoose, -19, 0",
                               "Sulfuras, Hand of Ragnaros, 0, 80",
@@ -290,7 +290,7 @@ def test_dia_24():
 
 
 def test_dia_25():
-    assert update_days(25) == ["+5 Dexterity Vest, -15, 0",
+    assert main(25) == ["+5 Dexterity Vest, -15, 0",
                               "Aged Brie, -23, 48",
                               "Elixir of the Mongoose, -20, 0",
                               "Sulfuras, Hand of Ragnaros, 0, 80",
@@ -302,7 +302,7 @@ def test_dia_25():
 
 
 def test_dia_26():
-    assert update_days(26) == ["+5 Dexterity Vest, -16, 0",
+    assert main(26) == ["+5 Dexterity Vest, -16, 0",
                               "Aged Brie, -24, 50",
                               "Elixir of the Mongoose, -21, 0",
                               "Sulfuras, Hand of Ragnaros, 0, 80",
@@ -314,7 +314,7 @@ def test_dia_26():
 
 
 def test_dia_27():
-    assert update_days(27) == ["+5 Dexterity Vest, -17, 0",
+    assert main(27) == ["+5 Dexterity Vest, -17, 0",
                               "Aged Brie, -25, 50",
                               "Elixir of the Mongoose, -22, 0",
                               "Sulfuras, Hand of Ragnaros, 0, 80",
@@ -326,7 +326,7 @@ def test_dia_27():
 
 
 def test_dia_28():
-    assert update_days(28) == ["+5 Dexterity Vest, -18, 0",
+    assert main(28) == ["+5 Dexterity Vest, -18, 0",
                               "Aged Brie, -26, 50",
                               "Elixir of the Mongoose, -23, 0",
                               "Sulfuras, Hand of Ragnaros, 0, 80",
@@ -338,7 +338,7 @@ def test_dia_28():
 
 
 def test_dia_29():
-    assert update_days(29) == ["+5 Dexterity Vest, -19, 0",
+    assert main(29) == ["+5 Dexterity Vest, -19, 0",
                               "Aged Brie, -27, 50",
                               "Elixir of the Mongoose, -24, 0",
                               "Sulfuras, Hand of Ragnaros, 0, 80",
@@ -350,7 +350,7 @@ def test_dia_29():
 
 
 def test_dia_30():
-    assert update_days(30) == ["+5 Dexterity Vest, -20, 0",
+    assert main(30) == ["+5 Dexterity Vest, -20, 0",
                               "Aged Brie, -28, 50",
                               "Elixir of the Mongoose, -25, 0",
                               "Sulfuras, Hand of Ragnaros, 0, 80",
@@ -359,7 +359,3 @@ def test_dia_30():
                               "Backstage passes to a TAFKAL80ETC concert, -20, 0",
                               "Backstage passes to a TAFKAL80ETC concert, -25, 0",
                               "Conjured Mana Cake, -27, 0"]
-
-
-if __name__ == "__main__":
-    assert test_dia_2() == True
