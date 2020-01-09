@@ -18,7 +18,7 @@ class Gildedrose:
                     raise ValueError
             except ValueError:
                 print(item.name + ' no cumple los requisitos para entrar en la tienda.')
-                items.remove(item)
+                self.items.remove(item)
             else:
                 pass
 
