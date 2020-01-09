@@ -106,3 +106,34 @@ def test_class_Gildedrose_Conjured():
     for item in gildedrose.items:
         item_updated = item.__repr__()
     assert item_updated == "Conjured dark mana, 0, 18"
+
+
+def test_class_Gildedrose_Agedbrie():
+    gildedrose = Gildedrose([Agedbrie("Agedbrie", -2, 43)])
+    gildedrose.update_quality()
+    for item in gildedrose.items:
+        item_updated = item.__repr__()
+    assert item_updated == "Agedbrie, -3, 45"
+
+
+def test_class_Gildedrose_Backstagepass():
+    gildedrose = Gildedrose([Backstagepass("Backstagepass", 0, 43)])
+    gildedrose.update_quality()
+    for item in gildedrose.items:
+        item_updated = item.__repr__()
+    assert item_updated == "Backstagepass, -1, 0"
+
+
+def test_class_Gildedrose_Sulfuras():
+    gildedrose = Gildedrose([Sulfuras("Sulfuras, Hand of Ragnaros", -10, 100)])
+    gildedrose.update_quality()
+    for item in gildedrose.items:
+        item_updated = item.__repr__()
+    assert item_updated == "Sulfuras, Hand of Ragnaros, -10, 100"
+
+
+def test_class_Gildedrose_add_item_works():
+    gildedrose = Gildedrose([Normalitem("Dragees", 10, 54)])
+    gildedrose.add_item()
+    assert gildedrose.items == []
+
