@@ -11,23 +11,19 @@ class Gildedrose:
     def __init__(self, items):
         self.items = items
 
-    def add_item(items):
-        list_of_items = []
-        for item in items:
+    def add_item(self):
+        for item in self.items:
             try:
                 if (item.quality > 50 or item.quality < 0) and item.name != "Sulfuras, Hand of Ragnaros":
                     raise ValueError
             except ValueError:
                 print(item.name + ' no cumple los requisitos para entrar en la tienda.')
+                items.remove(item)
             else:
-                list_of_items.append(item)
-        return list_of_items
+                pass
 
     def get_items(self):
-        inventory = []
-        for item in self.items:
-            inventory.append(item.__repr__())
-        return inventory
+        return self.items
 
     def update_quality(self):
         for item in self.items:
