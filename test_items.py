@@ -136,4 +136,3 @@ def test_class_Gildedrose_add_item_works():
     gildedrose = Gildedrose([Normalitem("Dragees", 10, 54)])
     gildedrose.add_item()
     assert gildedrose.items == []
-
