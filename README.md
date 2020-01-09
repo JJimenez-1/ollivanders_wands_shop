@@ -23,4 +23,3 @@ En nuestro proyecto hemos aprendido a:
 - En la clase Gildedrose no encontrabamos la manera de conseguir que diera el resultado que queriamos, por lo cual estuvimos estancados.
 - Gracias a la ayuda de mis compañeros y de David mediante Slack pudimos solventar las dudas que teniamos y Gildedrose terminó correctamente.
 - Finalmente creamos los enrutadores que Flask utilizaría y funcionó correctamente.
-- Como duda tenemos los casos test de los 30 días, ya que no conseguimos que funcione ningun día excepto el primero.
