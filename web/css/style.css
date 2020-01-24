@@ -1,7 +1,61 @@
 body {
+    background-color: rgb(252, 222, 209);
 }
 
 .navbar-brand img {
     width: 150px;
     height: auto;
+}
+
+.titulo {
+    padding-top: 20px;
+    font-family: fantasy;
+    text-decoration: underline;
+}
+
+.imagen-producto img{
+
+    border: 10px double rgb(231, 158, 90);
+}
+
+.descripcion {
+    margin-top: 50px;
+}
+
+.descripcion tbody {
+    border: 10px solid rgb(163, 68, 68);
+}
+
+.descripcion td {
+    text-align: center;
+}
+
+#pie-de-pagina {
+    margin-top: 40px;
+    background-color: rgb(156, 138, 187);
+    color: blanchedalmond;
+}
+
+.table-striped td {
+    font-size: 20px;
+    text-align: center;
+}
+
+.table-striped th {
+    font-size: 25px;
+    text-align: center;
+}
+
+.footer-copyright a {
+    color: rgb(239, 255, 10);
+    text-decoration: 
+}
+
+.navbar-light {
+    background-color: rgb(207, 199, 199);
+}
+
+.navbar-light button {
+    color: rgb(0, 0, 0);
+    border: 2px solid;
 }
