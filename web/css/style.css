@@ -1,5 +1,5 @@
 body {
-    background-color: rgb(252, 222, 209);
+    background-color: rgb(232, 229, 245);
 }
 
 .navbar-brand img {
@@ -15,7 +15,7 @@ body {
 
 .imagen-producto img{
 
-    border: 10px double rgb(231, 158, 90);
+    border: 5px solid rgb(0, 26, 255);
 }
 
 .descripcion {
@@ -23,7 +23,7 @@ body {
 }
 
 .descripcion tbody {
-    border: 10px solid rgb(163, 68, 68);
+    border: 5px double rgb(183, 0, 255);
 }
 
 .descripcion td {
