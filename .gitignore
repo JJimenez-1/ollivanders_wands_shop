@@ -41,6 +41,7 @@ nosetests.xml
 
 # Virtual environment
 ollivander
+ollivanders
 
 # VSCode
 .vscode
