@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Ollivander's Shop</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="static/css/style.css" />
+</head>
+
+<body>
+    <div id="principal">
+        {% include 'header.html' %}
+        <div id="contenido">
+            <div class="row justify-content-center">
+                <div class="col-auto">
+                    <table class="table table-striped table-responsive">
+                        <thead>
+                            <tr>
+                                <th scope="col">Nº Item</th>
+                                <th scope="col">Nombre</th>
+                                <th scope="col">Dias para caducar</th>
+                                <th scope="col">Calidad</th>
+                                <th scope="col">Enlace al producto</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">1</th>
+                                <td>+5 Dexterity Vest</td>
+                                <td>10</td>
+                                <td>20</td>
+                                <td><a class="btn btn-primary" href="/producto" role="button">Ver producto</a></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">2</th>
+                                <td>Aged Brie</td>
+                                <td>2</td>
+                                <td>0</td>
+                                <td><a class="btn btn-primary" href="/producto" role="button">Ver producto</a></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">3</th>
+                                <td>Elixir of the Mongoose</td>
+                                <td>5</td>
+                                <td>7</td>
+                                <td><a class="btn btn-primary" href="/producto" role="button">Ver producto</a></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">4</th>
+                                <td>Sulfuras, Hand of Ragnaros</td>
+                                <td>0</td>
+                                <td>80</td>
+                                <td><a class="btn btn-primary" href="/producto" role="button">Ver producto</a></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">5</th>
+                                <td>Sulfuras, Hand of Ragnaros</td>
+                                <td>-1</td>
+                                <td>80</td>
+                                <td><a class="btn btn-primary" href="/producto" role="button">Ver producto</a></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">6</th>
+                                <td>Backstage passes to a TAFKAL80ETC concert</td>
+                                <td>15</td>
+                                <td>20</td>
+                                <td><a class="btn btn-primary" href="/producto" role="button">Ver producto</a></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">7</th>
+                                <td>Backstage passes to a TAFKAL80ETC concert</td>
+                                <td>10</td>
+                                <td>49</td>
+                                <td><a class="btn btn-primary" href="/producto" role="button">Ver producto</a></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">8</th>
+                                <td>Backstage passes to a TAFKAL80ETC concert</td>
+                                <td>5</td>
+                                <td>49</td>
+                                <td><a class="btn btn-primary" href="/producto" role="button">Ver producto</a></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">9</th>
+                                <td>Conjured Mana Cake</td>
+                                <td>3</td>
+                                <td>6</td>
+                                <td><a class="btn btn-primary" href="/producto" role="button">Ver producto</a></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        {% include 'footer.html' %}
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,104 @@
+body {
+    background-color: rgb(232, 229, 245);
+}
+
+.navbar-brand img {
+    width: 150px;
+    height: auto;
+}
+
+.titulo {
+    padding-top: 20px;
+    font-family: fantasy;
+    text-decoration: underline;
+}
+
+.imagen-producto img{
+
+    border: 5px solid rgb(0, 26, 255);
+}
+
+.descripcion {
+    margin-top: 50px;
+}
+
+.descripcion tbody {
+    border: 5px double rgb(183, 0, 255);
+}
+
+.descripcion td {
+    text-align: center;
+}
+
+#pie-de-pagina {
+    margin-top: 40px;
+    background-color: rgb(156, 138, 187);
+    color: blanchedalmond;
+}
+
+#contenido .table-striped td {
+    font-size: 20px;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#contenido .table-striped th {
+    font-size: 25px;
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.footer-copyright a {
+    color: rgb(239, 255, 10);
+}
+
+.navbar-light {
+    background-color: rgb(201, 191, 191);
+}
+
+.navbar-light button {
+    color: rgb(0, 0, 0);
+    border: 2px solid;
+}
+
+#encabezado-backend .navbar-light {
+    background-color: rgb(136, 132, 101);
+}
+
+#pie-de-pagina-backend {
+    margin-top: 40px;
+    background-color: rgb(2, 2, 2);
+    color: blanchedalmond;
+}
+
+#encabezado-backend .nav-link {
+    color: beige;
+    font-size: 25px;
+}
+
+#encabezado-backend .navbar-brand {
+    color: rgb(73, 17, 17);
+    font-size: 45px;
+    font-family: fantasy;
+}
+
+.formulario-backend {
+    margin-top: 60px;
+}
+
+.formulario-backend .btn-primary{
+    margin-left: 30px;
+}
+
+#encabezado-backend .navbar-light button {
+    color: rgb(0, 0, 0);
+    border: 2px solid;
+}
+
+#contenido-backend .table-striped td {
+    text-align: center;
+}
+
+#contenido-backend .table-striped th {
+    text-align: center;
+}

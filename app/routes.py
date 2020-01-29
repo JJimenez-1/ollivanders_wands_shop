@@ -1,5 +1,6 @@
 from app import app
 from main import *
+from flask import render_template
 
 
 inventory = Gildedrose([Normalitem("+5 Dexterity Vest", 10, 20),
@@ -15,12 +16,34 @@ inventory = Gildedrose([Normalitem("+5 Dexterity Vest", 10, 20),
 
 @app.route('/')
 def show_inventory():
-    inventory.add_item()
-    actual_inventory = inventory.get_items()
-    front_end = "----------- Inventory right now -----------<br/>"
-    for item in actual_inventory:
-        front_end = front_end + "<br/>" + item.__repr__()
-    return front_end
+    return render_template('index.html')
+#def show_inventory():
+#    inventory.add_item()
+#    actual_inventory = inventory.get_items()
+#    front_end = "----------- Inventory right now -----------<br/>"
+#    for item in actual_inventory:
+#        front_end = front_end + "<br/>" + item.__repr__()
+#    return front_end
+
+
+@app.route('/producto')
+def show_item():
+    return render_template('producto.html')
+
+
+@app.route('/backend')
+def go_to_backend():
+    return render_template('/backend/index.html')
+
+
+@app.route('/backend/modificar_item')
+def modify_item():
+    return render_template('/backend/modificar_item.html')
+
+
+@app.route('/backend/añadir_item')
+def add_item():
+    return render_template('/backend/añadir_item.html')
 
 
 @app.route('/update_inventory')

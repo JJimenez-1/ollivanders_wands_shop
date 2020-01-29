@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Backend</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="static/css/style.css" />
+</head>
+
+<body>
+  {% include '/backend/header.html' %}
+  <div id="contenido-backend">
+    <div class="row justify-content-center">
+      <div class="col-auto">
+        <table class="table table-striped table-responsive">
+          <thead>
+            <tr>
+              <th scope="col">Nº Item</th>
+              <th scope="col">Nombre</th>
+              <th scope="col">Dias para caducar</th>
+              <th scope="col">Calidad</th>
+              <th scope="col">Operaciones</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">1</th>
+              <td>+5 Dexterity Vest</td>
+              <td>10</td>
+              <td>20</td>
+              <td>
+                <a class="btn btn-primary" href="/backend/modificar_item" role="button">Modificar</a>
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#eliminarModal">
+                  Eliminar
+                </button>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">2</th>
+              <td>Aged Brie</td>
+              <td>2</td>
+              <td>0</td>
+              <td>
+                <a class="btn btn-primary" href="/backend/modificar_item" role="button">Modificar</a>
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#eliminarModal">
+                  Eliminar
+                </button>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">3</th>
+              <td>Elixir of the Mongoose</td>
+              <td>5</td>
+              <td>7</td>
+              <td>
+                <a class="btn btn-primary" href="/backend/modificar_item" role="button">Modificar</a>
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#eliminarModal">
+                  Eliminar
+                </button>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">4</th>
+              <td>Sulfuras, Hand of Ragnaros</td>
+              <td>0</td>
+              <td>80</td>
+              <td>
+                <a class="btn btn-primary" href="/backend/modificar_item" role="button">Modificar</a>
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#eliminarModal">
+                  Eliminar
+                </button>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">5</th>
+              <td>Sulfuras, Hand of Ragnaros</td>
+              <td>-1</td>
+              <td>80</td>
+              <td>
+                <a class="btn btn-primary" href="/backend/modificar_item" role="button">Modificar</a>
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#eliminarModal">
+                  Eliminar
+                </button>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">6</th>
+              <td>Backstage passes to a TAFKAL80ETC concert</td>
+              <td>15</td>
+              <td>20</td>
+              <td>
+                <a class="btn btn-primary" href="/backend/modificar_item" role="button">Modificar</a>
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#eliminarModal">
+                  Eliminar
+                </button>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">7</th>
+              <td>Backstage passes to a TAFKAL80ETC concert</td>
+              <td>10</td>
+              <td>49</td>
+              <td>
+                <a class="btn btn-primary" href="/backend/modificar_item" role="button">Modificar</a>
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#eliminarModal">
+                  Eliminar
+                </button>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">8</th>
+              <td>Backstage passes to a TAFKAL80ETC concert</td>
+              <td>5</td>
+              <td>49</td>
+              <td>
+                <a class="btn btn-primary" href="/backend/modificar_item" role="button">Modificar</a>
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#eliminarModal">
+                  Eliminar
+                </button>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">9</th>
+              <td>Conjured Mana Cake</td>
+              <td>3</td>
+              <td>6</td>
+              <td>
+                <a class="btn btn-primary" href="/backend/modificar_item" role="button">Modificar</a>
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#eliminarModal">
+                  Eliminar
+                </button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+  <!-- Eliminar Modal (Botón con ventana emergente al pulsarlo)-->
+  <div class="modal fade" id="eliminarModal" data-backdrop="static" tabindex="-1" role="dialog"
+    aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="staticBackdropLabel">Eliminar producto</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          ¿Estás seguro de eliminar el producto?
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">No</button>
+          <button type="button" class="btn btn-primary">Sí</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Añadir dia Modal (Botón con ventana emergente al pulsarlo) -->
+  <div class="modal fade" id="diaModal" data-backdrop="static" tabindex="-1" role="dialog"
+    aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="staticBackdropLabel">Actualizar día</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          Vas a actualizar el inventario 1 día, ¿estas seguro de ello?
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">No</button>
+          <button type="button" class="btn btn-primary">Sí</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Footer -->
+  {% include '/backend/footer.html' %}
+  <!-- Footer -->
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
