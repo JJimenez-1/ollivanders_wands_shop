@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>Title</title>
+    <title>Añadir producto</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -10,34 +10,11 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="/web/css/style.css" />
+    <link rel="stylesheet" type="text/css" href="static/css/style.css" />
 </head>
 
 <body>
-    <div id="encabezado-backend">
-        <nav class="navbar navbar-expand-lg navbar-light">
-            <a class="navbar-brand" href="/web/backend/index.html">BackEnd</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
-                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <div class="navbar-nav">
-                    <a class="nav-item nav-link active" href="/web/backend/index.html">Inicio <span
-                            class="sr-only">(current)</span></a>
-                    <a class="nav-item nav-link" href="/web/backend/añadir_item.html">Añadir producto</a>
-                    <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#diaModal">
-                        Añadir dia
-                    </button>
-                    <a class="nav-item nav-link" href="/web/index.html">FrontEnd</a>
-                </div>
-            </div>
-            <form class="form-inline my-2 my-lg-0">
-                <input class="form-control mr-sm-2" type="search" placeholder="Buscar..." aria-label="Search">
-                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
-            </form>
-        </nav>
-    </div>
+    {% include '/backend/header.html' %}
     <div class="formulario-backend">
         <form>
             <div class="form-group col-md-6">

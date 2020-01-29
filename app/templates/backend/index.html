@@ -10,34 +10,11 @@
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <link rel="stylesheet" type="text/css" href="/web/css/style.css" />
+  <link rel="stylesheet" type="text/css" href="static/css/style.css" />
 </head>
 
 <body>
-  <div id="encabezado-backend">
-    <nav class="navbar navbar-expand-lg navbar-light">
-      <a class="navbar-brand" href="/web/backend/index.html">BackEnd</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
-        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-        <div class="navbar-nav">
-          <a class="nav-item nav-link active" href="/web/backend/index.html">Inicio <span
-              class="sr-only">(current)</span></a>
-          <a class="nav-item nav-link" href="/web/backend/añadir_item.html">Añadir producto</a>
-          <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#diaModal">
-            Añadir dia
-          </button>
-          <a class="nav-item nav-link" href="/web/index.html">FrontEnd</a>
-        </div>
-      </div>
-      <form class="form-inline my-2 my-lg-0">
-        <input class="form-control mr-sm-2" type="search" placeholder="Buscar..." aria-label="Search">
-        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
-      </form>
-    </nav>
-  </div>
+  {% include '/backend/header.html' %}
   <div id="contenido-backend">
     <div class="row justify-content-center">
       <div class="col-auto">
@@ -58,7 +35,7 @@
               <td>10</td>
               <td>20</td>
               <td>
-                <a class="btn btn-primary" href="/web/backend/modificar_item.html" role="button">Modificar</a>
+                <a class="btn btn-primary" href="/modificar_item" role="button">Modificar</a>
                 <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#eliminarModal">
                   Eliminar
                 </button>
@@ -70,7 +47,7 @@
               <td>2</td>
               <td>0</td>
               <td>
-                <a class="btn btn-primary" href="/web/backend/modificar_item.html" role="button">Modificar</a>
+                <a class="btn btn-primary" href="/modificar_item" role="button">Modificar</a>
                 <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#eliminarModal">
                   Eliminar
                 </button>
@@ -82,7 +59,7 @@
               <td>5</td>
               <td>7</td>
               <td>
-                <a class="btn btn-primary" href="/web/backend/modificar_item.html" role="button">Modificar</a>
+                <a class="btn btn-primary" href="/modificar_item" role="button">Modificar</a>
                 <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#eliminarModal">
                   Eliminar
                 </button>
@@ -94,7 +71,7 @@
               <td>0</td>
               <td>80</td>
               <td>
-                <a class="btn btn-primary" href="/web/backend/modificar_item.html" role="button">Modificar</a>
+                <a class="btn btn-primary" href="/modificar_item" role="button">Modificar</a>
                 <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#eliminarModal">
                   Eliminar
                 </button>
@@ -106,7 +83,7 @@
               <td>-1</td>
               <td>80</td>
               <td>
-                <a class="btn btn-primary" href="/web/backend/modificar_item.html" role="button">Modificar</a>
+                <a class="btn btn-primary" href="/modificar_item" role="button">Modificar</a>
                 <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#eliminarModal">
                   Eliminar
                 </button>
@@ -118,7 +95,7 @@
               <td>15</td>
               <td>20</td>
               <td>
-                <a class="btn btn-primary" href="/web/backend/modificar_item.html" role="button">Modificar</a>
+                <a class="btn btn-primary" href="/modificar_item" role="button">Modificar</a>
                 <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#eliminarModal">
                   Eliminar
                 </button>
@@ -130,7 +107,7 @@
               <td>10</td>
               <td>49</td>
               <td>
-                <a class="btn btn-primary" href="/web/backend/modificar_item.html" role="button">Modificar</a>
+                <a class="btn btn-primary" href="/modificar_item" role="button">Modificar</a>
                 <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#eliminarModal">
                   Eliminar
                 </button>
@@ -142,7 +119,7 @@
               <td>5</td>
               <td>49</td>
               <td>
-                <a class="btn btn-primary" href="/web/backend/modificar_item.html" role="button">Modificar</a>
+                <a class="btn btn-primary" href="/modificar_item" role="button">Modificar</a>
                 <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#eliminarModal">
                   Eliminar
                 </button>
@@ -154,7 +131,7 @@
               <td>3</td>
               <td>6</td>
               <td>
-                <a class="btn btn-primary" href="/web/backend/modificar_item.html" role="button">Modificar</a>
+                <a class="btn btn-primary" href="/modificar_item" role="button">Modificar</a>
                 <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#eliminarModal">
                   Eliminar
                 </button>
@@ -208,19 +185,7 @@
     </div>
   </div>
   <!-- Footer -->
-  <div id="pie-de-pagina-backend">
-    <footer class="page-footer font-small teal pt-4">
-      <!-- Copyright -->
-      <div class="footer-copyright text-center py-3">Copyright &copy; 2020
-        All Rights Reserved
-        This product is protected by copyright and distributed under
-        licenses restricting copying, distribution, and decompilation.
-      </div>
-      <!-- Copyright -->
-      <div class="footer-copyright text-center py-3"><a href="https://github.com/JJimenez-1">JJimenez-1</a> y
-        <a href="https://github.com/DanielFernandezR">DanielFernandezR</a></div>
-    </footer>
-  </div>
+  {% include '/backend/footer.html' %}
   <!-- Footer -->
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->

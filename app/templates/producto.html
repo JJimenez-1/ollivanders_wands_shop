@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Información del producto</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="static/css/style.css" />
+</head>
+
+<body>
+    <div id="principal">
+        {% include 'header.html' %}
+        <div id="producto">
+            <div class="titulo">
+                <h1 class="text-center">+5 Dexterity Vest</h1>
+            </div>
+            <div class="imagen-producto">
+                <img src="static/img/dexterity_vest.png" class="rounded mx-auto d-block">
+            </div>
+            <div class="descripcion">
+                <div class="row justify-content-center">
+                    <div class="col-auto">
+                        <table class="table table-responsive">
+                            <tbody>
+                                <tr>
+                                    <td class="font-weight-bold">Nombre del producto</td>
+                                    <td>+5 Dexterity Vest</td>
+                                </tr>
+                                <tr>
+                                    <td class="font-weight-bold">Días restantes para caducar</td>
+                                    <td>10</td>
+                                </tr>
+                                <tr>
+                                    <td class="font-weight-bold">Calidad del Producto (0-50)</td>
+                                    <td>20</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            {% include 'footer.html' %}
+        </div>
+</body>
+
+</html>
