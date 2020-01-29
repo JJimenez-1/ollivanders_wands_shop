@@ -36,12 +36,12 @@ def go_to_backend():
     return render_template('/backend/index.html')
 
 
-@app.route('/backend/modificar_item')
+@app.route('/modificar_item')
 def modify_item():
     return render_template('/backend/modificar_item.html')
 
 
-@app.route('/backend/añadir_item')
+@app.route('/añadir_item')
 def add_item():
     return render_template('/backend/añadir_item.html')
 
