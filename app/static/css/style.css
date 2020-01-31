@@ -1,13 +1,22 @@
-body {
+body { /* Color del fondo de las páginas */
     background-color: rgb(232, 229, 245);
 }
 
-.navbar-brand img {
+.navbar-brand img { /* Modificar encabezado */
     width: 150px;
     height: auto;
 }
 
-.titulo {
+.navbar-light {
+    background-color: rgb(201, 191, 191);
+}
+
+.navbar-light button {
+    color: rgb(0, 0, 0);
+    border: 2px solid;
+}
+
+.titulo { /* Aquí empieza la modificación de la página producto */
     padding-top: 20px;
     font-family: fantasy;
     text-decoration: underline;
@@ -26,17 +35,21 @@ body {
     border: 5px double rgb(183, 0, 255);
 }
 
-.descripcion td {
+.descripcion td { /* Aquí termina la modificación de la página producto */
     text-align: center;
 }
 
-#pie-de-pagina {
+#pie-de-pagina { /* Estilo del pie de página de la web */
     margin-top: 40px;
     background-color: rgb(156, 138, 187);
     color: blanchedalmond;
 }
 
-#contenido .table-striped td {
+.footer-copyright a {
+    color: rgb(239, 255, 10);
+}
+
+#contenido .table-striped td { /* Estilo de la tabla de los items */
     font-size: 20px;
     text-align: center;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -48,27 +61,8 @@ body {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
-.footer-copyright a {
-    color: rgb(239, 255, 10);
-}
-
-.navbar-light {
-    background-color: rgb(201, 191, 191);
-}
-
-.navbar-light button {
-    color: rgb(0, 0, 0);
-    border: 2px solid;
-}
-
-#encabezado-backend .navbar-light {
+#encabezado-backend .navbar-light { /* Estilo del encabezado del backend */
     background-color: rgb(136, 132, 101);
-}
-
-#pie-de-pagina-backend {
-    margin-top: 40px;
-    background-color: rgb(2, 2, 2);
-    color: blanchedalmond;
 }
 
 #encabezado-backend .nav-link {
@@ -82,17 +76,23 @@ body {
     font-family: fantasy;
 }
 
-.formulario-backend {
-    margin-top: 60px;
-}
-
-.formulario-backend .btn-primary{
-    margin-left: 30px;
-}
-
 #encabezado-backend .navbar-light button {
     color: rgb(0, 0, 0);
     border: 2px solid;
+}
+
+#pie-de-pagina-backend { /* Estilo del pie de página del backend */
+    margin-top: 40px;
+    background-color: rgb(2, 2, 2);
+    color: blanchedalmond;
+}
+
+.formulario-backend { /* Estilo del formulario del backend */
+    margin-top: 60px;
+}
+
+.formulario-backend .btn-primary{ /* Estilo de la tabla de items del backend */
+    margin-left: 30px;
 }
 
 #contenido-backend .table-striped td {

@@ -11,11 +11,13 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="static/css/style.css" />
+    <!-- CSS creado por mí para elegir cosas de estilo por mi cuenta -->
 </head>
 
 <body>
     <div id="principal">
         {% include 'header.html' %}
+        <!-- Añadimos el encabezado del archivo header.html -->
         <div id="producto">
             <div class="titulo">
                 <h1 class="text-center">+5 Dexterity Vest</h1>
@@ -25,6 +27,7 @@
             </div>
             <div class="descripcion">
                 <div class="row justify-content-center">
+                <!-- Creamos una tabla con las características del objeto -->
                     <div class="col-auto">
                         <table class="table table-responsive">
                             <tbody>
@@ -46,6 +49,7 @@
                 </div>
             </div>
             {% include 'footer.html' %}
+            <!-- Le añadimos el pie de página desde el archivo footer.html -->
         </div>
 </body>
 
