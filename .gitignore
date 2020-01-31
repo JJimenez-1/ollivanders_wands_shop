@@ -1,4 +1,7 @@
+# Python byte code
 *.py[cod]
+
+# Pytest cache
 .pytest_cache
 
 # C extensions
