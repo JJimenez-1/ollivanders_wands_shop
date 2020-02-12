@@ -1,4 +1,4 @@
-from clases.gildedrose import *
+from domain.gildedrose import *
 
 
 def main(days_passed):

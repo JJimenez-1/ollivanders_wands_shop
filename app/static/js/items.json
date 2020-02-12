@@ -1,0 +1,50 @@
+{
+    "items":
+    [
+        {
+            "nombre": "+5 Dexterity Vest",
+            "dias": 10,
+            "calidad": 20
+        },
+        {
+            "nombre": "Aged Brie",
+            "dias": 2,
+            "calidad": 0
+        },
+        {
+            "nombre": "Elixir of the Mongoose",
+            "dias": 5,
+            "calidad": 7
+        },
+        {
+            "nombre": "Sulfuras, Hand of Ragnaros",
+            "dias": 0,
+            "calidad": 80
+        },
+        {
+            "nombre": "Sulfuras, Hand of Ragnaros",
+            "dias": -1,
+            "calidad": 80
+        },
+        {
+            "nombre": "Backstage passes to a TAFKAL80ETC concert",
+            "dias": 15,
+            "calidad": 20
+        },
+        {
+            "nombre": "Backstage passes to a TAFKAL80ETC concert",
+            "dias": 10,
+            "calidad": 49
+        },
+        {
+            "nombre": "Backstage passes to a TAFKAL80ETC concert",
+            "dias": 5,
+            "calidad": 49
+        },
+        {
+            "nombre": "Conjured Mana Cake",
+            "dias": 3,
+            "calidad": 6
+        }
+    ]
+}

@@ -1,5 +1,5 @@
-from clases.updatable import Updatable
-from clases.item import Item
+from domain.updatable import Updatable
+from domain.item import Item
 
 
 class Normalitem(Item, Updatable):

@@ -1,4 +1,4 @@
-from clases.normalitem import Normalitem
+from domain.normalitem import Normalitem
 
 
 class Backstagepass(Normalitem):

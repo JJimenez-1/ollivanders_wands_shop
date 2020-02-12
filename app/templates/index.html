@@ -12,6 +12,7 @@
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="static/css/style.css" />
     <!-- CSS creado por mí para elegir cosas de estilo por mi cuenta -->
+    <script src="static/js/functions.js"></script>
 </head>
 
 <body>
@@ -33,11 +34,7 @@
                             </tr>
                         </thead>
                         <tbody id="taulaItems">
-                                <th scope="row">9</th>
-                                <td>Conjured Mana Cake</td>
-                                <td>3</td>
-                                <td>6</td>
-                                <td><a class="btn btn-primary" href="/producto" role="button">Ver producto</a></td>
+
                         </tbody>
                     </table>
                 </div>
@@ -46,6 +43,11 @@
         {% include 'footer.html' %}
         <!-- Le añadimos el pie de página desde el archivo footer.html -->
     </div>
+    <script>
+        window.onload = function() {
+          loadItems();
+        };
+    </script>
 </body>
 
 </html>
