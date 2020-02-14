@@ -31,7 +31,7 @@ def add_item():
 
 @app.route('/coger_items')
 def coger_item():
-    with open('static/js/items.json') as file:
+    with open('app/static/js/items.json') as file:
         inventario = json.load(file)
     return json.dumps(inventario)
 
