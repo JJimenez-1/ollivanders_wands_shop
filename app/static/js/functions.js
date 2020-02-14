@@ -3,11 +3,11 @@ function loadItems() {
   xmlhttp.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
       var myObj = JSON.parse(this.responseText);
-
+      // Encontramos la tabla en el html que tenga como ID taulaItems
       var taula = document.getElementById("taulaItems");
 
       taula.innerHTML = "";
-
+      // Para cada item en el archivo json, añade una fila y las propiedades de cada item (nombre, calidad, enlace, caducidad)
       for (let item in myObj.items) {
         var row = taula.insertRow(-1);
         
@@ -22,9 +22,9 @@ function loadItems() {
         cell3.innerHTML = myObj.items[item].calidad;
         cell4.innerHTML = '<a class="btn btn-primary" href="/producto" role="button">Ver producto</a';
       }
-      //document.getElementById("demo").innerHTML = myObj.name;
     }
   };
+  // Abre la ruta /coger_items para después utilizar los datos con la funcion js.
   xmlhttp.open("GET", "/coger_items", true);
   xmlhttp.send();
 }
