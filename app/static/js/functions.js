@@ -25,6 +25,6 @@ function loadItems() {
       //document.getElementById("demo").innerHTML = myObj.name;
     }
   };
-  xmlhttp.open("GET", "static/js/items.json", true);
+  xmlhttp.open("GET", "/coger_items", true);
   xmlhttp.send();
 }
